@@ -1,0 +1,35 @@
+
+mixin task3(options = {})
+  -
+    const heroList = [
+      {
+        number: "1 элемент блока",
+        label: "Подзаголовок №1",
+        info: "Текстовое описание №1"
+      },
+      {
+        number: "2 элемент блока",
+        label: "Подзаголовок №2",
+        info: "Текстовое описание №2"
+      },
+      {
+        number: "3 элемент блока",
+        label: "Подзаголовок №3",
+        info: "Текстовое описание №3"
+      }
+    ]
+
+  .hero
+    .container
+      h1.hero__title!= options.title
+      p.hero__desciption!= options.description
+      ul.hero__list
+        each item in heroList
+          li.hero__item
+            .hero__label-wrapper
+              span.hero__number= item.number
+              h2.hero__label= item.label
+            .hero__info-wrapper
+              p.hero__info= item.info
+
+
