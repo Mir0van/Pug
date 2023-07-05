@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>ProjectName</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container"><span class="header__logo">Логотип</span>
+          <nav class="main-nav">
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <svg width="20" height="20" aria-hidden="true">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
+                </li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="intro">
+          <div class="container">
+            <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
+            <p style="margin-top: 40px;">Пример использования +img()</p>
+            <p style="margin-bottom: 40px;"><img src="img/content/placeholder.png" srcset="img/content/placeholder@2x.png 2x" width="120" height="120" alt="Пример">
+            </p>
+          </div>
+        </div>
+        <div class="software-card">
+          <div class="software-card__inner"><span class="software-card__tag">Тег карточки</span>
+            <h2 class="software-card__heading">Заголовок</h2>
+          </div>
+          <p class="software-card__description">Описание карточки с программным обеспечением</p><a class="software-card__btn btn" href="#">
+            <svg width="178" height="43" viewBox="0 0 178 43" fill="none" xmlns="http://www.w3.org/2000/svg"></svg><span class="btn__text">Подробнее</span></a>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container"></div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
